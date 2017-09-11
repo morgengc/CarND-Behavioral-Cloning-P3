@@ -103,7 +103,7 @@ model.add(Dense(1))
 
 Here is a visualization of the architecture:
 
-<center>![alt text][Architechture]</center>
+![alt text][image1]
 
 #### 3. Creation of the Training Set & Training Process
 
