@@ -34,7 +34,6 @@ def generator(samples, batch_size=32, training=True):
             images = []
             angles = []
             for batch_sample in batch_samples:
-                # If training hoose camera sample randomly
                 # center, left, right => 0, 1, 2
                 if training:
                     camera_source = np.random.randint(0, 3)
@@ -93,3 +92,4 @@ model.fit_generator(train_generator,
                     nb_val_samples=len(validation_samples),
                     nb_epoch=NUMBER_EPOCH)
 model.save('model.h5')
+
